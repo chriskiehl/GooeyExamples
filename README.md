@@ -9,6 +9,10 @@ This is a small collection of example programs to demonstrate the functionality 
 
 ##Instructions 
 
-These are just little scripts, so there's nothing to install. You can either [download](https://github.com/chriskiehl/Gooey/archive/master.zip) a zipped copy of the repository, or  
+Step 1. [Download](https://github.com/chriskiehl/Gooey/archive/master.zip), or clone (`git clone https://github.com/chriskiehl/GooeyExamples.git`) the repository. 
+
+Step 2. Run a script.   
+
+Step 3. No step 3.  
  
  
