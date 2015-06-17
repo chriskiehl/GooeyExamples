@@ -1,10 +1,13 @@
 '''
-Created on Dec 21, 2013
+An example script to demonstrate Gooey's recovery from Client errors.
 
-@author: Chris
+(It fails because it's supposed to)
+
 '''
+
 import sys
 import hashlib
+
 from time import time as _time
 from time import sleep as _sleep
 

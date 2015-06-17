@@ -1,5 +1,5 @@
 '''
-A minimal Gooey example. One required field, one optional. 
+A minimal Gooey example. One required field, one optional.
 '''
 
 

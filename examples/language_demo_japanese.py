@@ -1,7 +1,5 @@
 '''
-Created on Dec 21, 2013
-
-@author: Chris
+Copy of the Widget Demo, but in russian!
 '''
 
 from gooey import Gooey

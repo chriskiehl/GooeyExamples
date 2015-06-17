@@ -1,17 +1,10 @@
 '''
-Created on Dec 21, 2013
-
-@author: Chris
+Copy of the Widget Demo, but in russian!
 '''
-
-import sys
-import hashlib
-from time import time as _time
-from time import sleep as _sleep
 
 from gooey import Gooey
 from gooey import GooeyParser
-from gooey.examples import display_message
+from examples import display_message
 
 
 @Gooey(language='russian', program_name=u'\u041f\u0440\u0438\u043c\u0435\u0440 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b')
