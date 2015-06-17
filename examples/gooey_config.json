@@ -1,0 +1,42 @@
+{
+  "num_optional_cols": 2, 
+  "num_required_cols": 2, 
+  "show_advanced": true, 
+  "program_name": "minimal_demo", 
+  "target": "python c:\\users\\chris\\appdata\\local\\temp\\tmpfhbx9y.py", 
+  "language": "english", 
+  "manual_start": false, 
+  "show_config": true, 
+  "default_size": [
+    610, 
+    530
+  ], 
+  "widgets": [
+    {
+      "data": {
+        "nargs": "+", 
+        "commands": [], 
+        "display_name": "integers", 
+        "help": "an integer for the accumulator", 
+        "choices": []
+      }, 
+      "required": true, 
+      "type": "TextField"
+    }, 
+    {
+      "data": {
+        "nargs": "", 
+        "commands": [
+          "--sum"
+        ], 
+        "display_name": "accumulate", 
+        "help": "sum the integers (default: find the max)", 
+        "choices": []
+      }, 
+      "required": false, 
+      "type": "CheckBox"
+    }
+  ], 
+  "layout_type": "standard", 
+  "program_description": "Process some integers."
+}
