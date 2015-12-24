@@ -26,7 +26,7 @@ types available to Gooey
 '''
 
 from gooey import Gooey, GooeyParser
-from examples import display_message
+from message import display_message
 
 
 @Gooey(dump_build_config=True, program_name="Widget Demo")

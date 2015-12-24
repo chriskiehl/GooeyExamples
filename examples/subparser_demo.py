@@ -5,7 +5,7 @@ Example program to demonstrate Gooey's presentation of subparsers
 import argparse
 
 from gooey import Gooey, GooeyParser
-from examples import display_message
+from message import display_message
 
 running = True
 
