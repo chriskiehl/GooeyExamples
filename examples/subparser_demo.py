@@ -10,7 +10,7 @@ from examples import display_message
 running = True
 
 
-@Gooey(optional_cols=2, program_name="Subparser Demo")
+@Gooey(optional_cols=2, program_name="Subparser Layout Demo")
 def main():
   settings_msg = 'Subparser example demonstating bundled configurations ' \
                  'for Siege, Curl, and FFMPEG'

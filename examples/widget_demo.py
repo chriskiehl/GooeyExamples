@@ -1,4 +1,5 @@
 '''
+@author: Chris
 Created on Dec 21, 2013
  __          __  _
  \ \        / / | |
@@ -19,7 +20,9 @@ Created on Dec 21, 2013
                            __/ |
                           |___/
 
-@author: Chris
+
+This demo will show you the full range of widget
+types available to Gooey
 '''
 
 from gooey import Gooey, GooeyParser
@@ -30,13 +33,15 @@ from examples import display_message
 def main():
   desc = "Example application to show Gooey's various widgets"
   file_help_msg = "Name of the file you want to process"
+
   my_cool_parser = GooeyParser(description=desc)
-  my_cool_parser.add_argument("FileChooser", help=file_help_msg, widget="FileChooser")   # positional
-  my_cool_parser.add_argument("DirectoryChooser", help=file_help_msg, widget="DirChooser")   # positional
-  my_cool_parser.add_argument("FileSaver", help=file_help_msg, widget="FileSaver")   # positional
-  my_cool_parser.add_argument("MultiFileSaver", help=file_help_msg, widget="MultiFileChooser")   # positional
-  my_cool_parser.add_argument("MultiDirChooser", help=file_help_msg, widget="MultiDirChooser")   # positional
-  my_cool_parser.add_argument("directory", help="Directory to store output")          # positional
+
+  my_cool_parser.add_argument("FileChooser", help=file_help_msg, widget="FileChooser")
+  my_cool_parser.add_argument("DirectoryChooser", help=file_help_msg, widget="DirChooser")
+  my_cool_parser.add_argument("FileSaver", help=file_help_msg, widget="FileSaver")
+  my_cool_parser.add_argument("MultiFileSaver", help=file_help_msg, widget="MultiFileChooser")
+  my_cool_parser.add_argument("MultiDirChooser", help=file_help_msg, widget="MultiDirChooser")
+  my_cool_parser.add_argument("directory", help="Directory to store output")
 
   my_cool_parser.add_argument('-d', '--duration', default=2, type=int, help='Duration (in seconds) of the program output')
   my_cool_parser.add_argument('-s', '--cron-schedule', type=int, help='datetime when the cron should begin', widget='DateChooser')
