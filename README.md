@@ -9,10 +9,11 @@ This is a small collection of example programs to demonstrate the functionality 
 
 ##Instructions 
 
-Step 1. [Download](https://github.com/chriskiehl/Gooey/archive/master.zip), or clone (`git clone https://github.com/chriskiehl/GooeyExamples.git`) the repository. 
+Step 1. Run `pip install Gooey`, to install the required Gooey package.
 
-Step 2. Run a script.   
+Step 2. [Download](https://github.com/chriskiehl/Gooey/archive/master.zip), or clone (`git clone https://github.com/chriskiehl/GooeyExamples.git`) the repository. 
 
-Step 3. No step 3.  
+Step 3. Run a script.   
+
  
  
