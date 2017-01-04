@@ -7,7 +7,7 @@ Thanks for checking out out Gooey!
 
 This is a sample message to demonstrate Gooey's functionality.
 
-Here's are the arguments you supplied:
+Here are the arguments you supplied:
 
 {0}
 
