@@ -36,27 +36,27 @@ BOOM = r"""
 """
 
 
-
 @Gooey(monospace_display=True)
 def main():
-  my_cool_parser = GooeyParser(description='This Demo will raise an error!')
-  my_cool_parser.add_argument(
-    "explode",
-    metavar='Should I explode?',
-    help="Determines whether or not to raise the error",
-    choices=['Yes', 'No'],
-    default='Yes')
+    my_cool_parser = GooeyParser(description='This Demo will raise an error!')
+    my_cool_parser.add_argument(
+        "explode",
+        metavar='Should I explode?',
+        help="Determines whether or not to raise the error",
+        choices=['Yes', 'No'],
+        default='Yes')
 
-  args = my_cool_parser.parse_args()
-  if 'yes' in args.explode.lower():
-    print 'Will throw error in'
-    for i in range(5, 0, -1):
-      print i
-      time.sleep(.7)
-    raise Exception(BOOM)
+    args = my_cool_parser.parse_args()
+    if 'yes' in args.explode.lower():
+        print('Will throw error in')
+        for i in range(5, 0, -1):
+            print(i)
+            time.sleep(.7)
+        raise Exception(BOOM)
 
-  print NO_BOOM
-  print 'No taste for danger, eh?'
+    print(NO_BOOM)
+    print('No taste for danger, eh?')
+
 
 if __name__ == '__main__':
-  main()
+    main()
