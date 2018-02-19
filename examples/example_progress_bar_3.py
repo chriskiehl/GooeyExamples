@@ -17,7 +17,7 @@ def main():
     args = parser.parse_args(sys.argv[1:])
 
     for i in range(args.steps):
-        print("progress: {}/{}".format(i+1, args.steps))
+        print("progress: {}/{}".format(i + 1, args.steps))
         sys.stdout.flush()
         sleep(args.delay)
 

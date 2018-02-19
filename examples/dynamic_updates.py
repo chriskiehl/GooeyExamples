@@ -10,17 +10,18 @@ import sys
 
 from gooey import Gooey, GooeyParser
 
-
 directory_error = (
     'Unable to create a folder for your save files!\n'
     'Make sure you\re running in a directory where you have write permissions!'
 )
 
+
 @Gooey(
     program_name="Using Dynamic Values",
     poll_external_updates=True)
 def main():
-    parser = GooeyParser(description='An example of polling for updates at runtime')
+    parser = GooeyParser(
+        description='An example of polling for updates at runtime')
     g = parser.add_argument_group()
     stuff = g.add_mutually_exclusive_group(
         required=True,
