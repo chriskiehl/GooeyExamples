@@ -104,4 +104,5 @@ if __name__ == '__main__':
     if 'gooey-seed-ui' in sys.argv:
         print(json.dumps({'--load': list_savefiles()}))
     else:
+        mk_savedir()
         main()
