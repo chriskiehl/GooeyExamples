@@ -20,7 +20,8 @@ directory_error = (
     program_name="Using Dynamic Values",
     poll_external_updates=True)
 def main():
-    mk_savedir()
+    mk_savedir()  # Make directory to store user's save files
+
     parser = GooeyParser(
         description='An example of polling for updates at runtime')
     g = parser.add_argument_group()
@@ -95,27 +96,22 @@ def mk_savedir():
     Attempt to create a directory where we can store the user's save files
     """
 
-    if sys.version_info[0] > 2:  # if Python 3
-        try:
+    try:
+        if sys.version_info[0] > 2:  # if Python 3
             os.makedirs('saves', exist_ok=True)
 
-        except IOError as e:
-            if not e.winerror == 183:  # already exists
-                show_error_modal(directory_error)
-                sys.exit(1)
+        elif sys.version_info[0] < 3:  # if Python 2
+            try:
+                os.makedirs('saves')
 
-    elif sys.version_info[0] < 3:  # if Python 2
-        try:
-            os.makedirs('saves')
+            except OSError:
+                if not os.path.isdir('saves'):
+                    raise
 
-        except OSError:
-            if not os.path.isdir('saves'):
-                raise
-
-        except IOError as e:
-            if not e.winerror == 183:  # already exists
-                show_error_modal(directory_error)
-                sys.exit(1)
+    except IOError as e:
+        if not e.winerror == 183:  # already exists
+            show_error_modal(directory_error)
+            sys.exit(1)
 
 
 if __name__ == '__main__':
