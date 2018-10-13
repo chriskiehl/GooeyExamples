@@ -60,7 +60,7 @@ def main():
 
     # ########################################################
     ffmpeg_parser = subs.add_parser(
-        'ffmpeg', help='Siege is an http/https regression testing and benchmarking utility')
+        'ffmpeg', help='A complete, cross-platform solution to record, convert and stream audio and video')
     ffmpeg_parser.add_argument('Output',
                                help='Pull down headers from the server and display HTTP transaction',
                                widget='FileSaver', type=argparse.FileType)
