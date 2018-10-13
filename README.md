@@ -7,12 +7,32 @@
 This is a small collection of example programs to demonstrate the functionality of [Gooey](https://github.com/chriskiehl/Gooey). 
 
 
-## Instructions 
+## Installation Instructions 
 
-Step 1. [Download](https://github.com/chriskiehl/Gooey/archive/master.zip), or clone (`git clone https://github.com/chriskiehl/GooeyExamples.git`) the repository. 
+Clone this project to your local machine
 
-Step 2. Run a script.   
+```
+git clone https://github.com/chriskiehl/GooeyExamples.git
+``` 
 
-Step 3. No step 3.  
- 
- 
+>Alternatively, you can manually download the source [here](https://github.com/chriskiehl/Gooey/archive/master.zip)
+
+Navigate the directory where you cloned the repo and pip install the dependencies
+
+```
+cd GooeyExamples/
+
+pip install -r requirements.txt 
+``` 
+
+## Running the examples
+
+```
+python ./examples/widget_demo.py
+```
+
+
+
+
+
+
