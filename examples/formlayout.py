@@ -20,7 +20,9 @@ def main():
             
     if R:
         print('Welcome {}'. format(R[0]))
-        print('Your marital status is: '. format(R[1]))
+        print('Marital status: {}'. format([ 'Married',
+                                             'Free',
+                                             'Not specified' ][R[1]]))
 
 if __name__ == '__main__':
     main()
