@@ -6,8 +6,6 @@ import sys
 from gooey import Gooey, GooeyParser
 from formlayout import fedit
 
-
-
 @Gooey(auto_start=True)
 def main():
     _ = GooeyParser().parse_args(sys.argv[1:])
@@ -19,10 +17,10 @@ def main():
             comment='Please fill the following information with care.')
             
     if R:
-        print('Welcome {}'. format(R[0]))
+        name,mstat = R
+        print('Welcome {}'. format(name))
         print('Marital status: {}'. format([ 'Married',
                                              'Free',
-                                             'Not specified' ][R[1]]))
-
+                                             'Not specified' ][mstat]))
 if __name__ == '__main__':
     main()
