@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 '''
 Created on Dec 21, 2013
 
@@ -31,39 +33,39 @@ welcome_message = \
 '''
 
 
-@Gooey(language='japanese', program_name=u'\u30d7\u30ed\u30b0\u30e9\u30e0\u4f8b')
+@Gooey(language='japanese', program_name=u'プログラム例')
 def arbitrary_function():
-    desc = u"\u30b3\u30de\u30f3\u30c9\u30e9\u30a4\u30f3\u5f15\u6570\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"
-    file_help_msg = u"\u51e6\u7406\u3057\u305f\u3044\u30d5\u30a1\u30a4\u30eb\u306e\u540d\u524d"
+    desc = u"コマンドライン引数を入力してください"
+    file_help_msg = u"処理したいファイルの名前"
     my_cool_parser = GooeyParser(description=desc)
-    my_cool_parser.add_argument('foo', metavar=u"\u30d5\u30a1\u30a4\u30eb\u30d6\u30e9\u30a6\u30b6",
+    my_cool_parser.add_argument('foo', metavar=u"ファイルブラウザ",
                                 help=file_help_msg, widget="FileChooser")   # positional
 
     my_cool_parser.add_argument(
         '-d',
-        metavar=u'--\u30c7\u30e5\u30ec\u30fc\u30b7\u30e7\u30f3',
+        metavar=u'--デュレーション',
         default=2,
         type=int,
-        help=u'\u30d7\u30ed\u30b0\u30e9\u30e0\u51fa\u529b\u306e\u671f\u9593\uff08\u79d2\uff09'
+        help=u'プログラム出力の期間（秒）'
     )
 
     my_cool_parser.add_argument(
         '-s',
-        metavar=u'--\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb',
-        help=u'\u65e5\u6642\u30d7\u30ed\u30b0\u30e9\u30e0\u3092\u958b\u59cb\u3059\u3079\u304d',
+        metavar=u'--スケジュール',
+        help=u'日時プログラムを開始すべき',
         widget='DateChooser'
     )
     my_cool_parser.add_argument(
         "-c",
-        metavar=u"--\u30b7\u30e7\u30fc\u30bf\u30a4\u30e0",
+        metavar=u"--ショータイム",
         action="store_true",
-        help=u"\u30ab\u30a6\u30f3\u30c8\u30c0\u30a6\u30f3\u30bf\u30a4\u30de\u30fc\u3092\u8868\u793a\u3057\u307e\u3059"
+        help=u"カウントダウンタイマーを表示します"
     )
     my_cool_parser.add_argument(
         "-p",
-        metavar=u"--\u30dd\u30fc\u30ba",
+        metavar=u"--ポーズ",
         action="store_true",
-        help=u"\u4e00\u6642\u505c\u6b62\u306e\u5b9f\u884c"
+        help=u"一時停止の実行"
     )
 
     args = my_cool_parser.parse_args()
