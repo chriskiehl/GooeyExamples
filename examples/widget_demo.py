@@ -50,6 +50,8 @@ def main():
                                 type=int, help='Duration (in seconds) of the program output')
     my_cool_parser.add_argument('-s', '--cron-schedule', type=int,
                                 help='datetime when the cron should begin', widget='DateChooser')
+    my_cool_parser.add_argument('--cron-time', 
+                                help='datetime when the cron should begin', widget="TimeChooser")
     my_cool_parser.add_argument(
         "-c", "--showtime", action="store_true", help="display the countdown timer")
     my_cool_parser.add_argument(
