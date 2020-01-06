@@ -30,7 +30,7 @@ def main():
                              help='Specify the User-Agent string ')
     curl_parser.add_argument('--cookie',
                              help='Pass the data to the HTTP server as a cookie')
-    curl_parser.add_argument('--dump-header', type=argparse.FileType,
+    curl_parser.add_argument('--dump-header', type=argparse.FileType(),
                              help='Write the protocol headers to the specified file')
     curl_parser.add_argument('--progress-bar', action="store_true",
                              help='Make curl display progress as a simple progress bar')
@@ -63,7 +63,7 @@ def main():
         'ffmpeg', help='A complete, cross-platform solution to record, convert and stream audio and video')
     ffmpeg_parser.add_argument('Output',
                                help='Pull down headers from the server and display HTTP transaction',
-                               widget='FileSaver', type=argparse.FileType)
+                               widget='FileSaver', type=argparse.FileType())
     ffmpeg_parser.add_argument('--bitrate',
                                help='set the video bitrate in kbit/s (default = 200 kb/s)',
                                type=str)
