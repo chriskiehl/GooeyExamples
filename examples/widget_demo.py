@@ -43,7 +43,7 @@ def main():
     my_cool_parser.add_argument(
         "FileSaver", help=file_help_msg, widget="FileSaver")
     my_cool_parser.add_argument(
-        "MultiFileSaver", nargs='*', help=file_help_msg, widget="MultiFileChooser")
+        "MultiFileChooser", nargs='*', help=file_help_msg, widget="MultiFileChooser")
     my_cool_parser.add_argument("directory", help="Directory to store output")
 
     my_cool_parser.add_argument('-d', '--duration', default=2,
