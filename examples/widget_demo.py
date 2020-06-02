@@ -69,7 +69,7 @@ def main():
     verbosity.add_argument('-q', '--quiet', dest='quiet',
                            action="store_true", help="Only output on error")
 
-    args = my_cool_parser.parse_args()
+    my_cool_parser.parse_args()
     display_message()
 
 

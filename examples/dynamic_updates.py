@@ -75,7 +75,7 @@ def show_error_modal(error_msg):
     """ Spawns a modal with error_msg"""
     # wx imported locally so as not to interfere with Gooey
     import wx
-    app = wx.App()
+    wx.App()
     dlg = wx.MessageDialog(None, error_msg, 'Error', wx.ICON_ERROR)
     dlg.ShowModal()
     dlg.Destroy()

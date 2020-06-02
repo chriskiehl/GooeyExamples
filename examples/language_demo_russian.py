@@ -6,11 +6,6 @@ Created on Dec 21, 2013
 @author: Chris
 '''
 
-import sys
-import hashlib
-from time import time as _time
-from time import sleep as _sleep
-
 from gooey import Gooey
 from gooey import GooeyParser
 import message

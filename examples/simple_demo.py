@@ -20,7 +20,7 @@ def main():
         action='store_true',
         help='I turn things on and off')
 
-    args = parser.parse_args()
+    parser.parse_args()
     print('Hooray!')
 
 
