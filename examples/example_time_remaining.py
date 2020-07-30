@@ -5,7 +5,10 @@ import os
         program_name="Elapsed / Remaining Timer on Progress in Gooey",
         progress_regex=r"^progress: (?P<current>\d+)/(?P<total>\d+)$",
         progress_expr="current / total * 100",
-        hide_progress_msg=True
+        timing_options = {
+                'show_time_remaining':True,
+                'show_time_remaining_on_complete':True
+        }
         )
 def parse_args():
     prog_descrip = 'Elapsed / Remaining Timer on Progress in Gooey'
