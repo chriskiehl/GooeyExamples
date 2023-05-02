@@ -31,8 +31,12 @@ pip install -r requirements.txt
 python ./examples/widget_demo.py
 ```
 
+## Running examples for integrations of Gooey with other tools
 
+```
+cd integrations/formlayout
 
+pip install -r requirements.txt
 
-
-
+python example_formlayout.py
+```
